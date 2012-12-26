@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* ========== CSS Reset ========== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video  { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+	body {	line-height: 1; }
+	ol, ul { list-style: none; }
+	blockquote, q {	quotes: none; }
+	blockquote:before, blockquote:after, q:before, q:after {	content: ''; content: none; }
+	table { border-collapse: collapse; 	border-spacing: 0; }
+
+
+
+/* ========== Utility Classes ========== */
+
+.clear 		{ clear: both; }
+.left		{ float: left; }
+.right		{ float: right; }
+.load 		{ display: none; }
+.unseen		{ display: none; }
+	
+	/* Controls Responsive Visibility */
+	.visible-all 		{ display: block; }
+	.visible-small		{ display: none; }
+	.visible-medium 	{ display: none; }
+	.visible-large 		{ display: block; }
+	.invisible-all		{ display: none; }
+	.invisible-small 	{ display: block; }
+	.invisible-medium 	{ display: block; }
+	.invisible-large 	{ display: none; }
+
+
+
+/* ========== Layout & Structure ========== */
+
+/* Creates Sections of Website Content that span the entire width of the page */
+.section 	{ width:100%; margin: 0px; padding: 0px; }
+
+/* Creates a centered div that is 960px wide */
+.inhalt 	{ width: 960px;	margin-left: auto; margin-right: auto; }
+
+/* Used for grouping containers into logical groups */
+.group { margin: 0px; padding: 0px; }
+
+	/* Sets widths for groups of containers */
+	.group.one-fourth		{ width: 25%; }
+	.group.one-third		{ width: 33.3333%; }
+	.group.one-half			{ width: 50%; }
+	.group.two-thirds		{ width: 66.6666%; }
+	.group.three-fourths	{ width: 75%; }
+	.group.full				{ width: 100%; }
+
+/* Used to contain groups of elements */
+.container 	{ margin: 0px 1.5% 10px 1.5%; position: relative; }
+
+	/* Sets widths for all containers */
+	.container.one-fourth 		{ width: 22%; }
+	.container.one-third 		{ width: 30.333333%; }
+	.container.one-half 		{ width: 47%; }
+	.container.two-thirds 		{ width: 63.666666%; }
+	.container.three-fourths 	{ width: 72%; }
+	.container.full 			{ width: 97%; }
+	
+	/* Sets margins for all containers within Groups */
+	.group.one-fourth .container 		{ margin: 0px 6% 10px 6%; }
+	.group.one-third .container 		{ margin: 0px 4.5% 10px 4.5%; }
+	.group.one-half .container 			{ margin: 0px 3% 10px 3%; }
+	.group.two-thirds .container 		{ margin: 0px 2.25% 10px 2.25%; }
+	.group.three-fourths .container 	{ margin: 0px 2% 10px 2%; }
+	.group.full .container 				{ margin: 0px 1.5% 10px 1.5%; }
+		
+		/* Sets container widths for all containers with groups of 1/4 width */
+		.group.one-fourth .container.one-fourth 		{ width: 13%; }
+		.group.one-fourth .container.one-third 			{ width: 21.333333%; }
+		.group.one-fourth .container.one-half 			{ width: 38%; }
+		.group.one-fourth .container.two-thirds 		{ width: 54.666666%; }
+		.group.one-fourth .container.three-fourths 		{ width: 63%; }
+		.group.one-fourth .container.full 				{ width: 88%; }	
+		
+		/* Sets container widths for all containers with groups of 1/3 width */
+		.group.one-third .container.one-fourth 			{ width: 16%; }
+		.group.one-third .container.one-third 			{ width: 24.333333%; }
+		.group.one-third .container.one-half 			{ width: 41%; }
+		.group.one-third .container.two-thirds 			{ width: 57.666666%; }
+		.group.one-third .container.three-fourths 		{ width: 66%; }
+		.group.one-third .container.full 				{ width: 91%; }	
+		
+		/* Sets container widths for all containers with groups of 1/2 width */
+		.group.one-half .container.one-fourth 			{ width: 19%; }
+		.group.one-half .container.one-third 			{ width: 27.333333%; }
+		.group.one-half .container.one-half 			{ width: 44%; }
+		.group.one-half .container.two-thirds 			{ width: 60.666666%; }
+		.group.one-half .container.three-fourths 		{ width: 69%; }
+		.group.one-half .container.full 				{ width: 94%; }	
+		
+		/* Sets container widths for all containers with groups of 2/3 width */
+		.group.two-thirds .container.one-fourth 		{ width: 20.5%; }
+		.group.two-thirds .container.one-third 			{ width: 28.833333%; }
+		.group.two-thirds .container.one-half 			{ width: 45.5%; }
+		.group.two-thirds .container.two-thirds 		{ width: 62.166666%; }
+		.group.two-thirds .container.three-fourths 		{ width: 70.5%; }
+		.group.two-thirds .container.full 				{ width: 95.5%; }	
+		
+		/* Sets container widths for all containers with groups of 3/4 width */
+		.group.three-fourths .container.one-fourth 		{ width: 21%; }
+		.group.three-fourths .container.one-third 		{ width: 29.333333%; }
+		.group.three-fourths .container.one-half 		{ width: 46%; }
+		.group.three-fourths .container.two-thirds 		{ width: 62.666666%; }
+		.group.three-fourths .container.three-fourths 	{ width: 71%; }
+		.group.three-fourths .container.full 			{ width: 96%; }	
+		
+		/* Sets container widths for all containers with groups of full width */
+		.group.full .container.one-fourth 				{ width: 22%; }
+		.group.full .container.one-third 				{ width: 30.333333%; }
+		.group.full .container.one-half 				{ width: 47%; }
+		.group.full .container.two-thirds 				{ width: 63.666666%; }
+		.group.full .container.three-fourths 			{ width: 72%; }
+		.group.full .container.full 					{ width: 97%; }	

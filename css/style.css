@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* Common Elements */
+	
+	/* Typography Settings - Default Font. Color, etc */
+	p, h1, h2, h3, h4, h5, h6, h7, a, ul, li, img, label, table { }
+	
+	/* Default Link Apperance and Behavior */
+	a:link {}
+	a:visited {}
+	a:hover {}
+	
+	/* Common Simple Styles */
+	.grey { background: #EEE; }
+
+	/* Creates s Simple Set of Buttons */
+	.button { padding: 8px 8% 8px 8%; display: inline-block; text-align: center; border-radius: 5px;  }
+		.button:link { color: #333; font-weight:bold; background: #f6f6f6; letter-spacing: 150%; border: 1px solid #DDD; }
+		.button:visited { color: #333; font-weight:bold; background: #f6f6f6; letter-spacing: 150%;  border: 1px solid #DDD;  }
+		.button:hover { color: #000; font-weight:bold; background: #EEE; border: 1px solid #CCC; text-shadow: 0em 0em 0.5em #FFF; box-shadow: 0em 0em 1em inset #FFF;}	
+	
+	/* Basic Styling for input elements in the Form field */
+	form input {}	/* Default settings for input fields */
+	form .pre {} 	/* Before anything has been done */
+	form .req {} 	/* If a field is required */
+	form .email {} 	/* For email fields */
+	form .pass {} 	/* If the value passes validation */
+	form .fail		/* If the value fails validation */
+	
+/* Specific Styling */
+body { }
+
+#header { }
+	
+		
+#content { }
+	
+	/* Types of Container */
+	.title {}
+	.text {}
+	.img {}
+	
+	
+#footer { }
+	
+			
+			
